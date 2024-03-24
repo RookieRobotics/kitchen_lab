@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+  <!-- Global values -->
+  <arg name="debug" default="false" />
+  <!-- <arg name="world"  default="empty"/> -->
+  <arg name="world" default="$(find kitchen_lab)/worlds/kitchen.world" /> 
+  <arg name="robot"  default="titanium"/>
+  <arg name="gzpose" default="-x 0.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"/>
+  <arg name="pause" default="false" />
+  <arg name="gui" default="true"/>
+
+  <!-- Gazebo world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world)" />
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg pause)" />
+    <arg name="use_sim_time" value="true" />
+  </include>
+
+</launch>
