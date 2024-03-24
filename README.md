@@ -11,20 +11,21 @@ ROS package for the simulation of a kitchen based environment. The package inclu
 ### Installation
 Clone the repository to your workspace source path.
 ```
-user@hostname:~/tiago_public_ws/src$ git clone https://github.com/JHermosillaD/kitchen_lab.git
+user@hostname:~/your_ws/src$ git clone https://github.com/JHermosillaD/kitchen_lab.git
 ```
 Build the workspace.
 
 ## Usage
 Execute the launcher.
 ```
-user@hostname:~/tiago_public_ws$ roslaunch kitchen_lab kitchen.launch
+user@hostname:~/your_ws$ roslaunch kitchen_lab kitchen.launch
 ```
 ## Demonstration
-Main loop. 
+
+### Main loop:
 <img width="887" height="480" src="/media/demo1.gif">
 
-Screenshots:
+### Screenshots:
 
 <img width="582" src="/media/demo2.jpg">
 <img width="582" src="/media/demo3.jpg">
