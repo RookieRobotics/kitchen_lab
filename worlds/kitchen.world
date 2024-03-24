@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://KitchenCountertop</uri>
+      <pose>-2.25 0.15 0.2 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Refrigerator</uri>
+      <pose>-2.22 -1.35 0.02 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://cafe_table</uri>
+      <pose>-0.386840 -1.484890 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://WoodenChair</uri>
+      <pose>-0.484914 -2.25539 0 0 -0 1.62164</pose>
+    </include>
+    <include>
+      <name>chair_2</name>
+      <uri>model://WoodenChair</uri>
+      <pose>0.25 -1.525 0 0 -0 -3.1</pose>
+    </include>
+    <include>
+      <uri>model://FemaleVisitorSit</uri>
+      <pose>-0.471138 -2.23926 0.01 0 0 -3.12168</pose>
+    </include>
+    <include>
+      <uri>model://plastic_cup</uri>
+      <pose>-0.25 -1.25 0.785965 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://Melissa_Doug_Felt_Food_Pizza_Set</uri>
+      <pose>-0.45 -1.75 0.78039 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://Pitcher_Base</uri>
+      <pose>-0.60 -1.45 0.787671 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://Threshold_Bistro_Ceramic_Dinner_Plate_Ruby_Ring</uri>
+      <pose>-0.10 -1.5 0.783665 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://Black_Decker_CM2035B_12Cup_Thermal_Coffeemaker</uri>
+      <pose>-2.55 0.10 0.768949 0 -0 2.04915</pose>
+    </include>
+    <include>
+      <uri>model://grey_wall</uri>
+      <pose>-3.0 0.05 0 0 -0 -1.57</pose>
+    </include>
+    <include>
+      <uri>model://TrashBin</uri>
+      <pose>-2.0 1.5 0 0 -0 1.51</pose>
+    </include>
+    <include>
+      <uri>model://BedsideTable2</uri>
+      <pose>1.45 2.3 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://LampAndStand</uri>
+      <pose>0.65 2.3 0 0 -0 0</pose>
+    </include>
+        <actor name="actor">
+          <skin>
+              <filename>model://actor/walker.dae</filename>
+              <scale>1.0</scale>
+          </skin>
+          <pose>0 0 0 0 0 0</pose>
+          <animation name="walking">
+              <filename>model://actor/walker.dae</filename>
+              <scale>1.0</scale>
+              <interpolate_x>true</interpolate_x>
+          </animation>
+          <script>
+              <loop>true</loop>
+              <delay_start>0.000000</delay_start>
+              <auto_start>true</auto_start>
+              <trajectory id="0" type="walking">
+                <waypoint> 
+                <time> 0.0 </time> 
+                <pose> -2.0 -4.0 0 0 0 0 </pose>
+                </waypoint>
+                <waypoint> 
+                <time> 1.5 </time> 
+                <pose> -1.0 -4.0 0 0 0 0 </pose>
+                </waypoint>
+                <waypoint> 
+                <time> 3.0 </time> 
+                <pose> 0.0 -4.0 0 0 0 0 </pose>
+                </waypoint>
+                <waypoint> 
+                <time> 4.5 </time> 
+                <pose> 1.0 -4.0 0 0 0 0 </pose>
+                </waypoint>
+                <waypoint> 
+                <time> 6.0 </time> 
+                <pose> 2.0 -4.0 0 0 0 0 </pose>
+                </waypoint>
+                <waypoint> 
+                <time> 7.5 </time> 
+                <pose> 2.0 -3.0 0 0 0 1.5708 </pose>
+                </waypoint>
+                <waypoint> 
+                <time> 9.0 </time> 
+                <pose> 2.0 -2.0 0 0 0 1.5708 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>10.5 </time> 
+                <pose> 2.0 -1.0 0 0 0 1.5708 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>12.0 </time> 
+                <pose> 2.0 0.0 0 0 0 1.5708 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>13.5 </time> 
+                <pose> 2.0 1.0 0 0 0 1.5708  </pose>
+                </waypoint>
+                <waypoint> 
+                <time>15.0 </time> 
+                <pose> 1.0 1.0 0 0 0 3.1416 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>16.5 </time> 
+                <pose> 1.0 0.0 0 0 0 4.7124 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>18.0 </time> 
+                <pose> 1.0 -1.0 0 0 0 4.7124 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>19.5 </time> 
+                <pose> 1.0 -2.0 0 0 0 4.7124 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>21.0 </time> 
+                <pose> 1.0 -3.0 0 0 0 4.7124 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>22.5 </time> 
+                <pose> 1.0 -4.0 0 0 0 4.7124 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>24.0 </time> 
+                <pose> 0.0 -4.0 0 0 0 3.1416 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>25.5 </time> 
+                <pose>-1.0 -4.0 0 0 0 3.1416 </pose>
+                </waypoint>
+                <waypoint> 
+                <time>27.0 </time> 
+                <pose>-2.0 -4.0 0 0 0 3.1416 </pose>
+                </waypoint>
+              </trajectory>
+          </script>
+        </actor>
+
+  </world>
+</sdf>
